@@ -1,0 +1,13 @@
+model:
+  similarity: all-MiniLM-L6-v2
+  classifier: microsoft/deberta-base
+  generator: mistralai/Mistral-7B-Instruct-v0.2
+
+training:
+  classifier_lr: 2e-5
+  generator_lr: 2e-4
+
+paths:
+  data: data/processed/
+  classifier: models/gap_classifier/
+  generator: models/socratic_generator/

@@ -1,0 +1,47 @@
+2026-05-05 22:57:17,904 INFO    MainThread:18240 [wandb_setup.py:_flush():81] Current SDK version is 0.26.1
+2026-05-05 22:57:17,905 INFO    MainThread:18240 [wandb_setup.py:_flush():81] Configure stats pid to 18240
+2026-05-05 22:57:17,905 INFO    MainThread:18240 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2026-05-05 22:57:17,906 INFO    MainThread:18240 [wandb_init.py:setup_run_log_directory():723] Logging user logs to C:\Users\mahrs\Documents\NLP Project\wandb\offline-run-20260505_225717-sjy4n1mk\logs\debug.log
+2026-05-05 22:57:17,906 INFO    MainThread:18240 [wandb_init.py:setup_run_log_directory():724] Logging internal logs to C:\Users\mahrs\Documents\NLP Project\wandb\offline-run-20260505_225717-sjy4n1mk\logs\debug-internal.log
+2026-05-05 22:57:17,909 INFO    MainThread:18240 [wandb_init.py:init():850] calling init triggers
+2026-05-05 22:57:17,909 INFO    MainThread:18240 [wandb_init.py:init():855] wandb.init called with sweep_config: {}
+config: {'_wandb': {}}
+2026-05-05 22:57:17,910 INFO    MainThread:18240 [wandb_init.py:init():898] starting backend
+2026-05-05 22:57:26,868 INFO    MainThread:18240 [wandb_init.py:init():913] sending inform_init request
+2026-05-05 22:57:31,101 INFO    MainThread:18240 [wandb_init.py:init():918] backend started and connected
+2026-05-05 22:57:31,151 INFO    MainThread:18240 [wandb_init.py:init():988] updated telemetry
+2026-05-05 22:57:31,159 INFO    MainThread:18240 [wandb_init.py:init():1011] communicating run to backend with 90.0 second timeout
+2026-05-05 22:57:31,169 INFO    MainThread:18240 [wandb_init.py:init():1056] starting run threads in backend
+2026-05-05 22:57:31,640 INFO    MainThread:18240 [wandb_run.py:_console_start():2554] atexit reg
+2026-05-05 22:57:31,640 INFO    MainThread:18240 [wandb_run.py:_redirect():2403] redirect: wrap_raw
+2026-05-05 22:57:31,641 INFO    MainThread:18240 [wandb_run.py:_redirect():2472] Wrapping output streams.
+2026-05-05 22:57:31,655 INFO    MainThread:18240 [wandb_run.py:_redirect():2495] Redirects installed.
+2026-05-05 22:57:31,703 INFO    MainThread:18240 [wandb_init.py:init():1094] run started, returning control to user process
+2026-05-05 23:10:40,084 ERROR   wandb-AsyncioManager-main:18240 [service_client.py:_forward_responses():131] Error reading server response.
+Traceback (most recent call last):
+  File "C:\Program Files\Python314\Lib\asyncio\windows_events.py", line 463, in finish_socket_func
+    return ov.getresult()
+           ~~~~~~~~~~~~^^
+OSError: [WinError 64] The specified network name is no longer available
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\mahrs\Documents\NLP Project\venv\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 127, in _forward_responses
+    while response := await self._read_server_response():
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mahrs\Documents\NLP Project\venv\Lib\site-packages\wandb\sdk\lib\service\service_client.py", line 141, in _read_server_response
+    header = await self._reader.readexactly(_HEADER_BYTE_INT_LEN)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\asyncio\streams.py", line 769, in readexactly
+    await self._wait_for_data('readexactly')
+  File "C:\Program Files\Python314\Lib\asyncio\streams.py", line 539, in _wait_for_data
+    await self._waiter
+  File "C:\Program Files\Python314\Lib\asyncio\proactor_events.py", line 286, in _loop_reading
+    length = fut.result()
+  File "C:\Program Files\Python314\Lib\asyncio\windows_events.py", line 804, in _poll
+    value = callback(transferred, key, ov)
+  File "C:\Program Files\Python314\Lib\asyncio\windows_events.py", line 467, in finish_socket_func
+    raise ConnectionResetError(*exc.args)
+ConnectionResetError: [WinError 64] The specified network name is no longer available
+2026-05-05 23:10:40,256 INFO    wandb-AsyncioManager-main:18240 [mailbox.py:close():155] Closing mailbox, abandoning 0 handles.

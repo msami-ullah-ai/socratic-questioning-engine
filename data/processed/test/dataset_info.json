@@ -1,0 +1,36 @@
+{
+  "citation": "",
+  "description": "",
+  "features": {
+    "question": {
+      "dtype": "large_string",
+      "_type": "Value"
+    },
+    "correct_answer": {
+      "dtype": "large_string",
+      "_type": "Value"
+    },
+    "student_answer": {
+      "dtype": "large_string",
+      "_type": "Value"
+    },
+    "gap_type": {
+      "dtype": "large_string",
+      "_type": "Value"
+    },
+    "gap_score": {
+      "dtype": "float64",
+      "_type": "Value"
+    },
+    "socratic_question": {
+      "dtype": "large_string",
+      "_type": "Value"
+    },
+    "__index_level_0__": {
+      "dtype": "int64",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": ""
+}

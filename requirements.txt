@@ -1,0 +1,16 @@
+torch==2.2.0
+transformers==4.40.0
+datasets==2.19.0
+sentence-transformers==2.6.1
+peft==0.10.0
+bitsandbytes==0.43.1
+trl==0.8.6
+accelerate==0.30.1
+streamlit==1.35.0
+wandb==0.17.0
+scikit-learn==1.4.2
+pandas==2.2.2
+numpy==1.26.4
+evaluate==0.4.2
+bert-score==0.3.13
+rouge-score==0.1.2
