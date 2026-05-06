@@ -57,7 +57,7 @@ trainer = Trainer(
 trainer.train()
 
 preds = trainer.predict(dataset["test"])
-y_true = dataset["test"]["gap_type"]
+y_true = dataset["test"]["label"]
 y_pred = np.argmax(preds.predictions, axis=1)
 
 print(classification_report(y_true, y_pred))
